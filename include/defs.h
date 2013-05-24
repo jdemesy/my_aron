@@ -53,11 +53,11 @@
 #include	<string.h>
 #include	<stdlib.h>
 #include	<math.h>
-#include	<SDL/SDL.h>
+#include	<SDL.h>
 
 #define		SCREEN_WIDTH	640
 #define		SCREEN_HEIGHT	480
 
-#endif		//DEFS_H_
+#endif		/*DEFS_H_*/
 
 /* defs.h ends here */

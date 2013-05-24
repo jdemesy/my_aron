@@ -72,6 +72,6 @@ typedef struct Gestion
 
 } Gestion;
 
-#endif		//STRUCTS_H_
+#endif		/*STRUCTS_H_*/
 
 /* structs.h ends here */

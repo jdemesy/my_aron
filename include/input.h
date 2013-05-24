@@ -52,6 +52,6 @@
 
 extern Input input;
 
-#endif //INPUT_H_
+#endif /*INPUT_H_*/
 
 /* input.h ends here */

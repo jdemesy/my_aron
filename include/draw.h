@@ -52,6 +52,6 @@
 
 extern Gestion jeu;
 
-#endif //DRAW_H_
+#endif /*DRAW_H_*/
 
 /* draw.h ends here */

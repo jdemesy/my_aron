@@ -52,6 +52,6 @@
 
 extern Gestion jeu;
 
-#endif //INIT_H_
+#endif /*INIT_H_*/
 
 /* init.h ends here */

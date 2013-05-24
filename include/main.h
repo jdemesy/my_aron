@@ -56,12 +56,12 @@ extern void init(char *);
 extern void cleanup(void);
 extern void getInput(void);
 extern void draw(void);
-
+extern void delay(unsigned int frameLimit);
 
 /* Déclaration des structures globales utilisées par le jeu */
 
 Input input;
 Gestion jeu;
 
-#endif		//MAIN_H_
+#endif		/*MAIN_H_*/
 /* main.h ends here */
