@@ -101,6 +101,8 @@ void loadGame(void)
 
 void cleanup()
 {
+  if (map.background != NULL)
+    SDL_FreeSurface(map.background);
 
   /* Quitte la SDL */
   SDL_Quit();
