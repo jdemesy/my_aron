@@ -50,7 +50,10 @@
 
 #include "structs.h"
 
+extern SDL_Surface *loadImage(char *name);
+
 extern Gestion jeu;
+extern Map map;
 
 #endif /*INIT_H_*/
 

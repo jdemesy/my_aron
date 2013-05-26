@@ -91,7 +91,11 @@ void init(char *title)
 
 }
 
-
+void loadGame(void)
+{
+  /* Chargement du background */
+  map.background = loadImage("graphics/background.png");
+}
 
 /* Fonction qui quitte le jeu proprement */
 

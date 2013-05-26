@@ -50,7 +50,7 @@ NAME	=	my_aron
 
 CC	=	gcc
 CFLAGS	=	`sdl-config --cflags` -I./include -Wall -Werror --ansi --pedantic -O2 -march=native
-LIBS	=	`sdl-config --libs`
+LIBS	=	`sdl-config --libs` -lSDL_image
 
 RM	=	rm -rf
 
@@ -62,10 +62,10 @@ $(NAME):	$(OBJ)
 all:		$(NAME)
 
 clean:
-		$(RM) $(OBJ) *~
+		@$(RM) $(OBJ) *~
 
 fclean:		clean
-		$(RM) $(NAME)
+		@$(RM) $(NAME)
 
 re:		fclean all
 

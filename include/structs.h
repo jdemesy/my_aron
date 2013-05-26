@@ -72,6 +72,13 @@ typedef struct Gestion
 
 } Gestion;
 
+/* Structure pour gérer la map à afficher */
+
+typedef struct Map
+{
+  SDL_Surface *background;
+} Map;
+
 #endif		/*STRUCTS_H_*/
 
 /* structs.h ends here */

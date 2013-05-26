@@ -55,6 +55,9 @@ int main( int argc, char *argv[ ] )
   /* Initialisation de la SDL dans une fonction séparée (voir après) */
   init("Aron");
 
+  /*Chargement des ressources graphiques */
+  loadGame();
+
   /* Appelle la fonction cleanup à la fin du programme */
   atexit(cleanup);
 
