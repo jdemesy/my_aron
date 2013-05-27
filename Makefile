@@ -54,7 +54,7 @@ LIBS	=	`sdl-config --libs` -lSDL_image
 
 RM	=	rm -rf
 
-OBJ	=	main.o draw.o init.o input.o
+OBJ	=	main.o draw.o init.o input.o map.o
 
 $(NAME):	$(OBJ)
 		$(CC) $(LIBS) $(OBJ) -o $(NAME)

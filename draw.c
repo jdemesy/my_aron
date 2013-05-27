@@ -59,18 +59,34 @@ void drawImage(SDL_Surface *image, int x, int y)
   SDL_BlitSurface(image, NULL, jeu.screen, &dest);
 }
 
+void drawTile(SDL_Surface *image, int destx, int desty, int srcx, int srcy)
+{
+  SDL_Rect dest, src;
+
+  dest.x = destx;
+  dest.y = desty;
+  dest.w = dest.h = TILE_SIZE;
+
+  src.x = srcx;
+  src.y = srcy;
+  src.w = src.h = TILE_SIZE;
+
+  SDL_BlitSurface(image, &src, jeu.screen, &dest);
+}
+
 void draw(void)
 {
   /* Affichage du background */
   drawImage(map.background, 0, 0);
 
-  /* Affiche l'écran */
+  /* Affichage de la map de tile */
+  drawMap();
 
+  /* Affiche l'écran */
   SDL_Flip(jeu.screen);
 
 
   /* Delai */
-
   SDL_Delay(1);
 
 }

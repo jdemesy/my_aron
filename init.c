@@ -95,6 +95,10 @@ void loadGame(void)
 {
   /* Chargement du background */
   map.background = loadImage("graphics/background.png");
+  /* Chargement du Tileset */
+  map.tileSet = loadImage("graphics/tileset.png");
+  /* chargement de la map */
+  loadMap("map/map1.txt");
 }
 
 /* Fonction qui quitte le jeu proprement */
@@ -103,6 +107,8 @@ void cleanup()
 {
   if (map.background != NULL)
     SDL_FreeSurface(map.background);
+  if (map.tileSet != NULL)
+    SDL_FreeSurface(map.tileSet);
 
   /* Quitte la SDL */
   SDL_Quit();

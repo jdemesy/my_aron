@@ -77,6 +77,13 @@ typedef struct Gestion
 typedef struct Map
 {
   SDL_Surface *background;
+  SDL_Surface *tileSet;
+  /* Coordonnees de debut de tracage de map */
+  int startX, startY;
+  /*Coordonnees de fin de traçage de la map*/
+  int maxX, maxY;
+  /*Tableau a 2 dimensions representant la map en memoire*/
+  int tile[MAX_MAP_Y][MAX_MAP_X];
 } Map;
 
 #endif		/*STRUCTS_H_*/

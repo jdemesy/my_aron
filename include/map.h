@@ -1,14 +1,14 @@
-/* init.h --- 
+/* map.h --- 
  * 
- * Filename: init.h
+ * Filename: map.h
  * Description: 
  * Author: Julien DEMESY
  * Maintainer: 
- * Created: Thu May 23 16:12:14 2013 (+0200)
+ * Created: Mon May 27 17:35:36 2013 (+0200)
  * Version: 
- * Last-Updated: Thu May 23 16:12:55 2013 (+0200)
- *           By: Julien DEMESY
- *     Update #: 1
+ * Last-Updated: 
+ *           By: 
+ *     Update #: 0
  * URL: 
  * Doc URL: 
  * Keywords: 
@@ -18,7 +18,7 @@
 
 /* Commentary: 
  * 
- * Initialisation header
+ * 
  * 
  */
 
@@ -45,17 +45,17 @@
 
 /* Code: */
 
-#ifndef INIT_H_
-#define INIT_H_
+#ifndef		MAP_H_
+#define		MAP_H_
 
-#include "structs.h"
+#include	"structs.h"
 
-extern SDL_Surface *loadImage(char *name);
-extern void loadMap(char *name);
+extern void drawImage(SDL_Surface*, int, int);
+extern void drawTile(SDL_Surface *image, int destx, int desty, int srcx, int srcy);
 
 extern Gestion jeu;
 extern Map map;
 
-#endif /*INIT_H_*/
+#endif		/*MAP_H_*/
 
-/* init.h ends here */
+/* map.h ends here */

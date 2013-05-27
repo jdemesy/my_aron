@@ -50,6 +50,8 @@
 
 #include "structs.h"
 
+extern void drawMap(void);
+
 extern Gestion jeu;
 extern Map map;
 

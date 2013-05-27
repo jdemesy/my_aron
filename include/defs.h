@@ -63,6 +63,11 @@
 #define		TRANS_G		0
 #define		TRANS_B		255
 
+#define		MAX_MAP_X	400
+#define		MAX_MAP_Y	300
+
+#define		TILE_SIZE	32
+
 #endif		/*DEFS_H_*/
 
 /* defs.h ends here */
